@@ -1,0 +1,75 @@
+/* bootStrapTable and tools */
+@media (min-width: 992px){
+    #kmap-customer-tool-bar{
+        width:870px;
+    }
+}
+@media (min-width: 1200px){
+    #kmap-customer-tool-bar{
+        width:1070px;
+    }
+}
+
+#kmap-customer-tool-bar{
+    display:table;
+}
+.customer-table-cell{
+    display:table-cell;
+    vertical-align: top;
+}
+
+/* bootstrapTable head color */
+.bootstrap-table .table thead > tr > th{
+    background-color: hsl(0, 0%, 21%) !important;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, #686868, #353535);
+    background-image: -ms-linear-gradient(top, #686868, #353535);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #686868), color-stop(100%, #353535));
+    background-image: -webkit-linear-gradient(top, #686868, #353535);
+    background-image: -o-linear-gradient(top, #686868, #353535);
+    background-image: linear-gradient(#686868, #353535);
+    border-color: #353535 #353535 hsl(0, 0%, 16%);
+    color: #fff !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* bootstrapTable pagination-detail font */
+.bootstrap-table .pagination-detail{
+    font-size: 13px;
+    font-family: "微软雅黑","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* paraser td ul */
+.parser-ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* advance search */
+.modal-dialog.customer-dialog{
+    width:500px;
+}
+.advance-search-table{
+    width:100%;
+}
+.advance-search-table td{
+    padding:6px 4px;
+}
+.advance-search-table tr td:first-child{
+    width:120px;
+}
+.advance-search-table td input{
+    width:260px;
+}
+.advance-search-table td .small-input{
+    width:127px;
+}
+.advance-search-table td select{
+    width:120px;
+    height:25px;
+}
+.advance-search-table td select[disabled]{
+    color:#777;
+}
