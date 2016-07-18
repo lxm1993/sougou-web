@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>数据管理</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/core/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/core/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/common.css">
+<body>
+<nav id="menu-navbar" class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-header">
+        <a id="menu-home" class="navbar-brand" href="/task/list-task">任务编辑平台</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav" style="margin-left: 30px;">
+            <li><a class="task" href="../task/list-task">任务管理</a></li>
+            <li><a class="metaData" href="../data/list-meta-data">数据管理</a></li>
+            {{! <li><a class="instanceData" href="/data/list-instance-data">实例数据管理</a></li> }}
+            <li><a class="parser" href="../parser/diff-parser">解析器管理</a></li>
+            <li><a class="user" href="../user/list-user">用户管理</a></li>
+            {{! <li><a class="token" href="../token/list-token">token管理</a></li> }}
+        </ul>
+        <div class="navbar-text navbar-right" style="margin-right:20px;">
+            <span class="glyphicon glyphicon-user"></span><span id="menu-username"></span>&nbsp;<span class="pipe">|</span>
+            <a id="logout-link" href="javascript:;" class="navbar-link">退出</a>
+        </div>
+    </div>
+</nav>
+{{{body}}}
+<script type="text/javascript" src="/vendor/require/require.js" data-main="/js/main"></script>
+</body>
+</html>

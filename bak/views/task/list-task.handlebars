@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="/vendor/bootstrap/table/bootstrap-table.css">
+<link rel="stylesheet" href="/css/table.css">
+<link rel="stylesheet" href="/css/task.css">
+<div class="container">
+    <div class="row">
+        <!--<div class="page-header" style="margin:-10px 0 10px; padding-bottom:4px">
+            <h4>任务列表
+                <small></small>
+            </h4>
+        </div>-->
+        <table id="table" data-aaa-bbb="lslsls"></table>
+    </div>
+    <div style="display:none">
+        <div id="kmap-customer-tool-bar">
+            <div class="customer-table-cell">
+                <div class="btn-group">
+                    <a href="/task/add-task" type="button" class="btn btn-custom-1 btn-sm"><span class="glyphicon glyphicon-plus"></span>&nbsp;添加</a>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-custom-1 btn-sm">批量运行</button>
+                </div>
+            </div>
+            <div class="customer-table-cell" style="width:350px">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="search-select btn btn-default dropdown-toggle" data-toggle="dropdown"></button>
+                        <ul class="search-list dropdown-menu"></ul>
+                    </div>
+                    <input type="text" class="search-input form-control" />
+                    <span class="input-group-btn">
+                        <button class="search-button btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        <button class="btn btn-default" type="button" data-toggle="modal" data-target="#advance-search"><span class="glyphicon glyphicon-chevron-down"></span></button>
+                   </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="advance-search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog customer-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">高级搜索</h4>
+                </div>
+                <div class="modal-body">
+                    <div style="margin:10px 20px">
+                        <table id="advance-search-table" class="advance-search-table">
+                            <tr>
+                                <td>
+                                    <select disabled="disabled">
+                                        <option>正则</option>
+                                        <option>正则</option>
+                                        <option>正则</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text"/>
+                                    <a title="删除" href="#" class="link-red advance-search-remove"><span class="glyphicon glyphicon-remove"></span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select disabled="disabled">
+                                        <option>正则</option>
+                                        <option>正则</option>
+                                        <option>正则</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text"/>
+                                    <a title="删除" href="#" class="link-red"><span class="glyphicon glyphicon-remove"></span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select disabled="disabled">
+                                        <option>正则</option>
+                                        <option>正则</option>
+                                        <option>正则</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="small-input"/>-<input type="text" class="small-input"/>
+                                    <a title="删除" href="#" class="link-red"><span class="glyphicon glyphicon-remove"></span></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select>
+                                        <option>正则</option>
+                                        <option>正则</option>
+                                        <option>正则</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text"/>
+                                    <a title="添加" href="#" class="link-green advance-search-add"><span class="glyphicon glyphicon-plus"></span></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">搜索</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div>
+    </div>
+</div>
+<div id="debug-wrap" class="task-debug-wrap" style="display:none;">
+    <div class="debug-header">
+        <span>调试结果</span>
+        <button id="close-debug-button" type="button" class="close">×</button>
+    </div>
+    <div class="debug-result">
+        <table id="debug-table"></table>
+    </div>
+</div>
+<script type="text/javascript">
+    window.moduleName = 'task/task';
+</script>

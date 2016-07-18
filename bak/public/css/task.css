@@ -1,0 +1,66 @@
+@media (min-width: 1350px){
+    .container {
+        width: 1300px;
+    }
+    #kmap-customer-tool-bar{
+        width:1195px;
+    }
+}
+@media (min-width: 1600px){
+    .container {
+        width: 1500px;
+    }
+    #kmap-customer-tool-bar{
+        width:1390px;
+    }
+}
+.parser-table td, .parser-table th{
+    border: solid 1px rgb(221, 221, 221);
+    padding: 0 5px;
+}
+.parser-table th{
+    white-space: nowrap;
+}
+.parser-table td{
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.parser-table .parser-td{
+    min-width: 140px;
+}
+td.parser-td{
+    padding: 0 !important;
+}
+
+.task-debug-wrap{
+    width: 600px;
+    background: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    position: fixed;
+    top:200px;
+    bottom: 5px;
+    right: 60px;
+    z-index: 100;
+}
+.task-debug-wrap .debug-header{
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    background: #ddd;
+}
+.task-debug-wrap .debug-result{
+    margin-top: -20px;
+    padding: 5px;
+    overflow: auto;
+}
+.task-debug-wrap .debug-header button{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+.task-debug-wrap .debug-header span{
+    position: absolute;
+    top: 3px;
+    left: 5px;
+}
