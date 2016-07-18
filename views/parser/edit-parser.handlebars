@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="header">
+        <h4 style="display: inline-block">编辑解析器</h4>
+        <div style="float: right;">
+            <button type="submit" class="btn btn-primary">调&nbsp;试</button>
+            <button type="submit" class="btn btn-primary">执&nbsp;行</button>
+            <button type="submit" class="btn btn-primary">保&nbsp;存</button>
+            <a href="javascript:history.back();" type="submit" class="btn btn-default">返&nbsp;回</a>
+        </div>
+        <hr/>
+    </div>
+    <div class="row">
+        <pre id="editor" class=" ace_editor ace-dawn"></pre>
+    </div>
+</div>
+
+<textarea id="result-code" style="display:none">{{{code}}}</textarea>
+<script type="text/javascript" src="/vendor/ace-master/src-min-noconflict/ace.js"></script>
+<script type="text/javascript" src="/dist/editParser.js"></script>

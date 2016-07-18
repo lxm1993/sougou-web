@@ -1,0 +1,43 @@
+{
+  "name": "knowledge",
+  "version": "1.0.0",
+  "description": "knowledge front page",
+  "main": "server/index.js",
+  "scripts": {
+    "watchViews":"gulp watch",
+    "watchJs":"webpack --progress --colors --watch",
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Li Hua",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "jquery": "^2.2.3",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "request": "^2.69.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-eslint": "^5.0.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "^4.2.3",
+    "expose-loader": "^0.7.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-uglify": "^1.5.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14"
+  }
+}
